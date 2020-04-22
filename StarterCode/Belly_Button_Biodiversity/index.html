@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <title>Bellybutton Biodiversity</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>HW 15: Interactive Dashboards</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div id="selection_panel" class="panel panel-default">
+                    <div class="panel-heading">Select ID</div>
+                    <div class="panel-body">
+                        <select id="selector_choice" onchange="id_choice(this.value)"></select>
+                    </div>
+                </div>
+                <div id="demographics_panel" class="panel panel-default">
+                    <div class="panel-heading">Demographic Info</div>
+                    <div id="demographic_info" class="panel-body"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="bar_chart"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="bubble_chart"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="plot.js"></script>
+</body>
+
+</html>
